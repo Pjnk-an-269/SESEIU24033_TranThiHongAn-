@@ -1,0 +1,251 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00100000000000000000001 /* DeliveryOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000001 /* DeliveryOrder.swift */; };
+		A00100000000000000000002 /* StandardDeliveryOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000002 /* StandardDeliveryOrder.swift */; };
+		A00100000000000000000003 /* ExpressDeliveryOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000003 /* ExpressDeliveryOrder.swift */; };
+		A00100000000000000000004 /* SameDayDeliveryOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000004 /* SameDayDeliveryOrder.swift */; };
+		A00100000000000000000005 /* DeliveryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000005 /* DeliveryManager.swift */; };
+		A00100000000000000000006 /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000006 /* ConsoleView.swift */; };
+		A00100000000000000000007 /* OrderContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000007 /* OrderContextView.swift */; };
+		A00100000000000000000008 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000008 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B00100000000000000000001 /* DeliveryOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryOrder.swift; sourceTree = "<group>"; };
+		B00100000000000000000002 /* StandardDeliveryOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardDeliveryOrder.swift; sourceTree = "<group>"; };
+		B00100000000000000000003 /* ExpressDeliveryOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressDeliveryOrder.swift; sourceTree = "<group>"; };
+		B00100000000000000000004 /* SameDayDeliveryOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SameDayDeliveryOrder.swift; sourceTree = "<group>"; };
+		B00100000000000000000005 /* DeliveryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryManager.swift; sourceTree = "<group>"; };
+		B00100000000000000000006 /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
+		B00100000000000000000007 /* OrderContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderContextView.swift; sourceTree = "<group>"; };
+		B00100000000000000000008 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B00100000000000000000009 /* DeliveryServiceSystem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeliveryServiceSystem; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C00100000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				C00100000000000000000002 /* Models */,
+				C00100000000000000000003 /* Sources */,
+				C00100000000000000000004 /* Views */,
+				B00100000000000000000008 /* main.swift */,
+				C00100000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C00100000000000000000002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B00100000000000000000001 /* DeliveryOrder.swift */,
+				B00100000000000000000002 /* StandardDeliveryOrder.swift */,
+				B00100000000000000000003 /* ExpressDeliveryOrder.swift */,
+				B00100000000000000000004 /* SameDayDeliveryOrder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C00100000000000000000003 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B00100000000000000000005 /* DeliveryManager.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C00100000000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B00100000000000000000006 /* ConsoleView.swift */,
+				C00100000000000000000006 /* ContextViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C00100000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B00100000000000000000009 /* DeliveryServiceSystem */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C00100000000000000000006 /* ContextViews */ = {
+			isa = PBXGroup;
+			children = (
+				B00100000000000000000007 /* OrderContextView.swift */,
+			);
+			path = ContextViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D00100000000000000000001 /* DeliveryServiceSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00100000000000000000002 /* Build configuration list for PBXNativeTarget "DeliveryServiceSystem" */;
+			buildPhases = (
+				D00100000000000000000002 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliveryServiceSystem;
+			productName = DeliveryServiceSystem;
+			productReference = B00100000000000000000009 /* DeliveryServiceSystem */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E00100000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D00100000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = F00100000000000000000001 /* Build configuration list for PBXProject "DeliveryServiceSystem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C00100000000000000000001;
+			productRefGroup = C00100000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D00100000000000000000001 /* DeliveryServiceSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00100000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00100000000000000000001 /* DeliveryOrder.swift in Sources */,
+				A00100000000000000000002 /* StandardDeliveryOrder.swift in Sources */,
+				A00100000000000000000003 /* ExpressDeliveryOrder.swift in Sources */,
+				A00100000000000000000004 /* SameDayDeliveryOrder.swift in Sources */,
+				A00100000000000000000005 /* DeliveryManager.swift in Sources */,
+				A00100000000000000000006 /* ConsoleView.swift in Sources */,
+				A00100000000000000000007 /* OrderContextView.swift in Sources */,
+				A00100000000000000000008 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		G00100000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		G00100000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		G00100000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deliveryservicesystem.console;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		G00100000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deliveryservicesystem.console;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F00100000000000000000001 /* Build configuration list for PBXProject "DeliveryServiceSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G00100000000000000000001 /* Debug */,
+				G00100000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F00100000000000000000002 /* Build configuration list for PBXNativeTarget "DeliveryServiceSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G00100000000000000000003 /* Debug */,
+				G00100000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E00100000000000000000001 /* Project object */;
+}
