@@ -1,0 +1,220 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* main.cpp */; };
+		A10000000000000000000002 /* UtilityBill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* UtilityBill.cpp */; };
+		A10000000000000000000003 /* ElectricityBill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* ElectricityBill.cpp */; };
+		A10000000000000000000004 /* WaterBill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* WaterBill.cpp */; };
+		A10000000000000000000005 /* InternetBill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* InternetBill.cpp */; };
+		A10000000000000000000006 /* BillingManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000016 /* BillingManager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000011 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A10000000000000000000012 /* UtilityBill.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UtilityBill.cpp; sourceTree = "<group>"; };
+		A10000000000000000000013 /* ElectricityBill.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ElectricityBill.cpp; sourceTree = "<group>"; };
+		A10000000000000000000014 /* WaterBill.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WaterBill.cpp; sourceTree = "<group>"; };
+		A10000000000000000000015 /* InternetBill.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InternetBill.cpp; sourceTree = "<group>"; };
+		A10000000000000000000016 /* BillingManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BillingManager.cpp; sourceTree = "<group>"; };
+		A10000000000000000000021 /* UtilityBill.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UtilityBill.hpp; sourceTree = "<group>"; };
+		A10000000000000000000022 /* ElectricityBill.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ElectricityBill.hpp; sourceTree = "<group>"; };
+		A10000000000000000000023 /* WaterBill.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WaterBill.hpp; sourceTree = "<group>"; };
+		A10000000000000000000024 /* InternetBill.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InternetBill.hpp; sourceTree = "<group>"; };
+		A10000000000000000000025 /* BillingManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BillingManager.hpp; sourceTree = "<group>"; };
+		A10000000000000000000031 /* UtilityBillSystem */ = {isa = PBXFileReference; explicitFileType = compiled.mach-o.executable; includeInIndex = 0; path = UtilityBillSystem; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000041 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000011 /* main.cpp */,
+				A10000000000000000000042 /* include */,
+				A10000000000000000000043 /* src */,
+				A10000000000000000000044 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000000000000000000042 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000021 /* UtilityBill.hpp */,
+				A10000000000000000000022 /* ElectricityBill.hpp */,
+				A10000000000000000000023 /* WaterBill.hpp */,
+				A10000000000000000000024 /* InternetBill.hpp */,
+				A10000000000000000000025 /* BillingManager.hpp */,
+			);
+			name = include;
+			path = include;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000043 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000012 /* UtilityBill.cpp */,
+				A10000000000000000000013 /* ElectricityBill.cpp */,
+				A10000000000000000000014 /* WaterBill.cpp */,
+				A10000000000000000000015 /* InternetBill.cpp */,
+				A10000000000000000000016 /* BillingManager.cpp */,
+			);
+			name = src;
+			path = src;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000031 /* UtilityBillSystem */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000000000000000000051 /* UtilityBillSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000061 /* Build configuration list for PBXNativeTarget "UtilityBillSystem" */;
+			buildPhases = (
+				A10000000000000000000052 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UtilityBillSystem;
+			productName = UtilityBillSystem;
+			productReference = A10000000000000000000031 /* UtilityBillSystem */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000000000000000000071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A10000000000000000000051 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A10000000000000000000062 /* Build configuration list for PBXProject "UtilityBillSystem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10000000000000000000041;
+			productRefGroup = A10000000000000000000044 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000000000000000000051 /* UtilityBillSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10000000000000000000052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* main.cpp in Sources */,
+				A10000000000000000000002 /* UtilityBill.cpp in Sources */,
+				A10000000000000000000003 /* ElectricityBill.cpp in Sources */,
+				A10000000000000000000004 /* WaterBill.cpp in Sources */,
+				A10000000000000000000005 /* InternetBill.cpp in Sources */,
+				A10000000000000000000006 /* BillingManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A10000000000000000000081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A10000000000000000000082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A10000000000000000000083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGNING_ALLOWED = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A10000000000000000000084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGNING_ALLOWED = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000061 /* Build configuration list for PBXNativeTarget "UtilityBillSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000083 /* Debug */,
+				A10000000000000000000084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000000000062 /* Build configuration list for PBXProject "UtilityBillSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000081 /* Debug */,
+				A10000000000000000000082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000000000000000000071 /* Project object */;
+}
