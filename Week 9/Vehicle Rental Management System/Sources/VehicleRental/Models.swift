@@ -260,20 +260,22 @@ final class Rental {
     let id: String
     let customer: Customer
     let vehicle: Vehicle
+    let startDay: Date
+    let endDay: Date
     let durationDays: Int
     let totalCostCents: Int
-    let startedAt: Date
     private(set) var status: RentalStatus = .active
     private(set) var returnedAt: Date?
 
-    init(id: String, customer: Customer, vehicle: Vehicle, durationDays: Int,
-         totalCostCents: Int, startedAt: Date = Date()) {
+    init(id: String, customer: Customer, vehicle: Vehicle, startDay: Date,
+         durationDays: Int, totalCostCents: Int) {
         self.id = id
         self.customer = customer
         self.vehicle = vehicle
+        self.startDay = startDay
         self.durationDays = durationDays
+        self.endDay = Calendar.current.date(byAdding: .day, value: durationDays, to: startDay) ?? startDay
         self.totalCostCents = totalCostCents
-        self.startedAt = startedAt
     }
 
     func markReturned(at date: Date = Date()) throws {
@@ -283,7 +285,25 @@ final class Rental {
     }
 
     var receipt: String {
-        "Rental \(id) | \(customer.name) | \(vehicle.make) \(vehicle.model) (\(vehicle.id)) | \(durationDays) day(s) | \(Money.format(totalCostCents)) | \(status.rawValue)"
+        let startStr = DateFormatHelper.format(startDay)
+        let endStr = DateFormatHelper.format(endDay)
+        return "Rental \(id) | \(customer.name) | \(vehicle.make) \(vehicle.model) (\(vehicle.id)) | \(startStr) to \(endStr) (\(durationDays) day(s)) | \(Money.format(totalCostCents)) | \(status.rawValue)"
+    }
+}
+
+enum DateFormatHelper {
+    private static let formatter: DateFormatter = {
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd"
+        return df
+    }()
+
+    static func format(_ date: Date) -> String {
+        formatter.string(from: date)
+    }
+
+    static func date(year: Int, month: Int, day: Int) -> Date {
+        Calendar.current.date(from: DateComponents(year: year, month: month, day: day)) ?? Date()
     }
 }
 
