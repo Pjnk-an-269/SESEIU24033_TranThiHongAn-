@@ -1,6 +1,5 @@
 import Foundation
 
-/// Owns the fleet, customer register, and rental records; all business operations pass through it.
 final class VehicleRentalSystem {
     private var vehicles: [String: Vehicle] = [:]
     private var customers: [String: Customer] = [:]
@@ -60,25 +59,25 @@ final class VehicleRentalSystem {
         try customer(withID: id).updateContact(email: email, phone: phone)
     }
 
-    func rent(vehicleID: String, to customerID: String, forDays days: Int,
-              rentalID: String = UUID().uuidString) throws -> Rental {
-        guard days > 0 else { throw RentalSystemError.invalidInput("Rental duration must be at least one day.") }
-        let vehicle = try vehicle(withID: vehicleID)
-        let customer = try customer(withID: customerID)
-        guard vehicle.isAvailable else { throw RentalSystemError.vehicleUnavailable(vehicleID) }
-        guard rentals[rentalID] == nil else {
-            throw RentalSystemError.invalidInput("A rental with ID '\(rentalID)' already exists.")
-        }
+    func rent(vehicleID: String, to customerID: String, startDay: Date = Date(),
+                  forDays days: Int, rentalID: String = UUID().uuidString) throws -> Rental {
+            guard days > 0 else { throw RentalSystemError.invalidInput("Rental duration must be at least one day.") }
+            let vehicle = try vehicle(withID: vehicleID)
+            let customer = try customer(withID: customerID)
+            guard vehicle.isAvailable else { throw RentalSystemError.vehicleUnavailable(vehicleID) }
+            guard rentals[rentalID] == nil else {
+                throw RentalSystemError.invalidInput("A rental with ID '\(rentalID)' already exists.")
+            }
 
-        // Dynamic dispatch selects the cost policy implemented by Car, Motorcycle, or ElectricBicycle.
-        let cost = try vehicle.rentalCostCents(forDays: days)
-        try vehicle.reserve()
-        let rental = Rental(id: rentalID, customer: customer, vehicle: vehicle,
-                            durationDays: days, totalCostCents: cost)
-        rentals[rentalID] = rental
-        customer.recordRental(id: rentalID)
-        return rental
-    }
+            // Dynamic dispatch selects the cost policy implemented by Car, Motorcycle, or ElectricBicycle.
+            let cost = try vehicle.rentalCostCents(forDays: days)
+            try vehicle.reserve()
+            let rental = Rental(id: rentalID, customer: customer, vehicle: vehicle,
+                                startDay: startDay, durationDays: days, totalCostCents: cost)
+            rentals[rentalID] = rental
+            customer.recordRental(id: rentalID)
+            return rental
+        }
 
     @discardableResult
     func returnVehicle(rentalID: String) throws -> Rental {
@@ -99,6 +98,6 @@ final class VehicleRentalSystem {
         return customer.rentalIDs.compactMap { rentals[$0] }
     }
 
-    func allRentals() -> [Rental] { rentals.values.sorted { $0.startedAt < $1.startedAt } }
+    func allRentals() -> [Rental] { rentals.values.sorted { $0.startDay < $1.startDay } }
     func activeRentals() -> [Rental] { allRentals().filter { $0.status == .active } }
 }
