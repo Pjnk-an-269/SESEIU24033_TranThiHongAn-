@@ -1,0 +1,186 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* Models.swift */; };
+		A10000000000000000000002 /* LibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* LibraryManager.swift */; };
+		A10000000000000000000003 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* LibraryViewModel.swift */; };
+		A10000000000000000000004 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* ContentView.swift */; };
+		A10000000000000000000005 /* ResourceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* ResourceDetailView.swift */; };
+		A10000000000000000000006 /* LibraryEquipmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* LibraryEquipmentApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryResourceManagementApp/Models.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* LibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryResourceManagementApp/LibraryManager.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryResourceManagementApp/LibraryViewModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryResourceManagementApp/ContentView.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* ResourceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryResourceManagementApp/ResourceDetailView.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* LibraryEquipmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryResourceManagementApp/LibraryEquipmentApp.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* LibraryResourceManagementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryResourceManagementApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000002 /* LibraryResourceManagementApp */,
+				D10000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D10000000000000000000002 /* LibraryResourceManagementApp */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000001 /* Models.swift */,
+				B10000000000000000000002 /* LibraryManager.swift */,
+				B10000000000000000000003 /* LibraryViewModel.swift */,
+				B10000000000000000000004 /* ContentView.swift */,
+				B10000000000000000000005 /* ResourceDetailView.swift */,
+				B10000000000000000000006 /* LibraryEquipmentApp.swift */,
+			);
+			name = LibraryResourceManagementApp;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (B10000000000000000000007 /* LibraryResourceManagementApp.app */);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10000000000000000000001 /* LibraryResourceManagementApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10000000000000000000002 /* Build configuration list for PBXNativeTarget */;
+			buildPhases = (
+				C10000000000000000000001 /* Frameworks */,
+				C10000000000000000000002 /* Sources */,
+				C10000000000000000000003 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = LibraryResourceManagementApp;
+			productName = LibraryResourceManagementApp;
+			productReference = B10000000000000000000007 /* LibraryResourceManagementApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10000000000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {E10000000000000000000001 = {CreatedOnToolsVersion = 26.5; }; };
+			};
+			buildConfigurationList = F10000000000000000000001 /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			 knownRegions = (en, Base);
+			mainGroup = D10000000000000000000001;
+			productRefGroup = D10000000000000000000003 /* Products */;
+			targets = (E10000000000000000000001 /* LibraryResourceManagementApp */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C10000000000000000000003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C10000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* Models.swift in Sources */,
+				A10000000000000000000002 /* LibraryManager.swift in Sources */,
+				A10000000000000000000003 /* LibraryViewModel.swift in Sources */,
+				A10000000000000000000004 /* ContentView.swift in Sources */,
+				A10000000000000000000005 /* ResourceDetailView.swift in Sources */,
+				A10000000000000000000006 /* LibraryEquipmentApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F10000000000000000000001 /* Project configuration list */ = {isa = XCConfigurationList; buildConfigurations = (F10000000000000000000011 /* Debug */, F10000000000000000000012 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F10000000000000000000002 /* Target configuration list */ = {isa = XCConfigurationList; buildConfigurations = (F10000000000000000000021 /* Debug */, F10000000000000000000022 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F10000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F10000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F10000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.example.LibraryResourceManagementApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F10000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.example.LibraryResourceManagementApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+	};
+	rootObject = E10000000000000000000002 /* Project object */;
+}
